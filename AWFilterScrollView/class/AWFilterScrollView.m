@@ -29,13 +29,36 @@
 
 - (void)_init
 {
-    self.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.1];
+    self.backgroundColor = [UIColor colorWithWhite:0.369 alpha:1.0];
 	self.pagingEnabled = NO;
 	self.scrollEnabled = YES;
 	self.bounces = YES;
 	self.showsHorizontalScrollIndicator = NO;
 	self.showsVerticalScrollIndicator = NO;
     self.delegate = self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    
+    UIBezierPath *whitePath = [UIBezierPath bezierPath];
+    [[UIColor colorWithWhite:0.7 alpha:1.0] set];
+    [whitePath moveToPoint:CGPointMake(0.0, 0.0)];
+    [whitePath addLineToPoint:CGPointMake(self.bounds.size.width, 0.0)];
+    [whitePath stroke];
+    
+    UIBezierPath *blackPath = [UIBezierPath bezierPath];
+    [[UIColor colorWithWhite:0.2 alpha:1.0] set];
+    [blackPath moveToPoint:CGPointMake(0.0, 1.0)];
+    [blackPath addLineToPoint:CGPointMake(self.bounds.size.width, 1.0)];
+    [blackPath stroke];
+    
+    UIBezierPath *grayPath = [UIBezierPath bezierPath];
+    [[UIColor colorWithWhite:0.3 alpha:1.0] set];
+    [grayPath moveToPoint:CGPointMake(0.0, 2.0)];
+    [grayPath addLineToPoint:CGPointMake(self.bounds.size.width, 2.0)];
+    [grayPath stroke];
 }
 
 - (void)reloadItems

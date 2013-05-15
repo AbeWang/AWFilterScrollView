@@ -45,9 +45,12 @@
 }
 - (void)_init
 {
-	self.backgroundColor = [UIColor blackColor];
-	self.layer.borderColor = [UIColor grayColor].CGColor;
+	self.backgroundColor = [UIColor clearColor];
+    
+    self.layer.backgroundColor = [UIColor grayColor].CGColor;
+	self.layer.borderColor = [UIColor whiteColor].CGColor;
 	self.layer.borderWidth = 1.0;
+    self.layer.cornerRadius = 10.0;
 
 	previewImageView = [[UIImageView alloc] init];
 	previewImageView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.1];
@@ -94,7 +97,7 @@
 	indicatorView.frame = CGRectMake((self.bounds.size.width - 20.0) / 2, (self.bounds.size.height - 30.0) / 2, 20.0, 20.0);
 	[indicatorView startAnimating];
 	
-	[[UIColor grayColor] set];
+	[[UIColor whiteColor] set];
 	[name drawInRect:CGRectMake(0.0, self.bounds.size.height - 20.0, self.bounds.size.width, 20.0) withFont:[UIFont boldSystemFontOfSize:12.0] lineBreakMode:UILineBreakModeTailTruncation alignment:UITextAlignmentCenter];
 
 	UIImage *image = [self _resizeOriginalImage];

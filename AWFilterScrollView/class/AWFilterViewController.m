@@ -56,6 +56,7 @@
     
 	previewView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height - 200.0)];
 	previewView.contentMode = UIViewContentModeScaleAspectFit;
+    previewView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:1.0];
 	[self.view addSubview:previewView];
 
 	indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];

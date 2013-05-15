@@ -26,9 +26,9 @@
 
 /* Begin PBXFileReference section */
 		300E62341743D1A200E45A25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		300E62391743D28B00E45A25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		300E623B1743D29000E45A25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		304DC3221742708D0092FDEF /* AWFilterScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWFilterScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		300E62391743D28B00E45A25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		300E623B1743D29000E45A25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		304DC3221742708D0092FDEF /* AW Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AW Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		304DC3251742708D0092FDEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		304DC3271742708D0092FDEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		304DC3291742708D0092FDEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,7 +88,7 @@
 		304DC3231742708D0092FDEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				304DC3221742708D0092FDEF /* AWFilterScrollView.app */,
+				304DC3221742708D0092FDEF /* AW Filter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		304DC3211742708D0092FDEF /* AWFilterScrollView */ = {
+		304DC3211742708D0092FDEF /* AW Filter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AWFilterScrollView" */;
+			buildConfigurationList = 304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AW Filter" */;
 			buildPhases = (
 				304DC31E1742708D0092FDEF /* Sources */,
 				304DC31F1742708D0092FDEF /* Frameworks */,
@@ -166,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = AWFilterScrollView;
+			name = "AW Filter";
 			productName = AWFilterScrollView;
-			productReference = 304DC3221742708D0092FDEF /* AWFilterScrollView.app */;
+			productReference = 304DC3221742708D0092FDEF /* AW Filter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				304DC3211742708D0092FDEF /* AWFilterScrollView */,
+				304DC3211742708D0092FDEF /* AW Filter */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AWFilterScrollView" */ = {
+		304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AW Filter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				304DC3401742708E0092FDEF /* Debug */,
