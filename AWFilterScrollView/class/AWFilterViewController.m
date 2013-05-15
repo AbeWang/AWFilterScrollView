@@ -48,9 +48,11 @@
 	self.navigationItem.rightBarButtonItem = selectItem;
     
 	UIBarButtonItem *spaceItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil] autorelease];
-	UIBarButtonItem *saveItem = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Save", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(saveAction)] autorelease];
+    
+    UIBarButtonItem *shareItem = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(([[UIDevice currentDevice].systemVersion doubleValue] >= 6.0) ? @"Share" : @"Save", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(shareAction)] autorelease];
+
 	self.navigationController.toolbarHidden = NO;
-	self.toolbarItems = [NSArray arrayWithObjects:spaceItem, saveItem, nil];
+	self.toolbarItems = [NSArray arrayWithObjects:spaceItem, shareItem, nil];
     
 	previewView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height - 200.0)];
 	previewView.contentMode = UIViewContentModeScaleAspectFit;
@@ -96,13 +98,22 @@
 	}
 }
 
-- (void)saveAction
+- (void)shareAction
 {
     if (previewView.image) {
-        UIImageWriteToSavedPhotosAlbum(previewView.image, nil, nil, nil);
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OK" message:nil delegate:nil cancelButtonTitle:NSLocalizedString(@"Dismiss", nil) otherButtonTitles:nil];
-        [alert show];
-        [alert release];
+        if ([[UIDevice currentDevice].systemVersion doubleValue] >= 6.0) {
+            NSString *textToShare = NSLocalizedString(@"[Abe Filter] Photo Sharing", nil);
+            NSArray *activityItems = [NSArray arrayWithObjects:textToShare, previewView.image, nil];
+            UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
+            [self presentViewController:controller animated:YES completion:nil];
+            [controller release];
+        }
+        else {
+            UIImageWriteToSavedPhotosAlbum(previewView.image, nil, nil, nil);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OK" message:nil delegate:nil cancelButtonTitle:NSLocalizedString(@"Dismiss", nil) otherButtonTitles:nil];
+            [alert show];
+            [alert release];
+        }
     }
 }
 
