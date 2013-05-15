@@ -75,7 +75,7 @@
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
-	return NO;
+	return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 #pragma mark -
@@ -85,7 +85,7 @@
 {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 		UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:NSLocalizedString(@"Close", nil) destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"Camera", nil), NSLocalizedString(@"Camera Roll", nil), nil];
-		[sheet showInView:self.view];
+		[sheet showFromToolbar:self.navigationController.toolbar];
 		[sheet release];
 	}
 	else {
