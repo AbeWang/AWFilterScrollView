@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304DC3261742708D0092FDEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3251742708D0092FDEF /* UIKit.framework */; };
+		304DC3281742708D0092FDEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3271742708D0092FDEF /* Foundation.framework */; };
+		304DC32A1742708D0092FDEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3291742708D0092FDEF /* CoreGraphics.framework */; };
+		304DC3301742708D0092FDEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 304DC32E1742708D0092FDEF /* InfoPlist.strings */; };
+		304DC3321742708E0092FDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DC3311742708E0092FDEF /* main.m */; };
+		304DC3381742708E0092FDEF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 304DC3371742708E0092FDEF /* Default.png */; };
+		304DC33A1742708E0092FDEF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 304DC3391742708E0092FDEF /* Default@2x.png */; };
+		304DC33C1742708E0092FDEF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 304DC33B1742708E0092FDEF /* Default-568h@2x.png */; };
+		304DC343174270CD0092FDEF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC342174270CD0092FDEF /* CoreImage.framework */; };
+		304DC345174270E80092FDEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC344174270E80092FDEF /* QuartzCore.framework */; };
+		304DC349174271CA0092FDEF /* AWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DC348174271CA0092FDEF /* AWAppDelegate.m */; };
+		304DC34C174272A30092FDEF /* AWFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DC34B174272A30092FDEF /* AWFilterViewController.m */; };
+		304DC34F174275820092FDEF /* AWFilterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DC34E174275820092FDEF /* AWFilterScrollView.m */; };
+		304DC353174299620092FDEF /* AWFilterButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DC352174299620092FDEF /* AWFilterButtonItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304DC3221742708D0092FDEF /* AWFilterScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWFilterScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304DC3251742708D0092FDEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		304DC3271742708D0092FDEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		304DC3291742708D0092FDEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		304DC32D1742708D0092FDEF /* AWFilterScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AWFilterScrollView-Info.plist"; sourceTree = "<group>"; };
+		304DC32F1742708D0092FDEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		304DC3311742708E0092FDEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		304DC3331742708E0092FDEF /* AWFilterScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWFilterScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		304DC3371742708E0092FDEF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		304DC3391742708E0092FDEF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		304DC33B1742708E0092FDEF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		304DC342174270CD0092FDEF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		304DC344174270E80092FDEF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		304DC347174271CA0092FDEF /* AWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWAppDelegate.h; path = class/AWAppDelegate.h; sourceTree = "<group>"; };
+		304DC348174271CA0092FDEF /* AWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWAppDelegate.m; path = class/AWAppDelegate.m; sourceTree = "<group>"; };
+		304DC34A174272A30092FDEF /* AWFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWFilterViewController.h; path = class/AWFilterViewController.h; sourceTree = "<group>"; };
+		304DC34B174272A30092FDEF /* AWFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWFilterViewController.m; path = class/AWFilterViewController.m; sourceTree = "<group>"; };
+		304DC34D174275820092FDEF /* AWFilterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWFilterScrollView.h; path = class/AWFilterScrollView.h; sourceTree = "<group>"; };
+		304DC34E174275820092FDEF /* AWFilterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWFilterScrollView.m; path = class/AWFilterScrollView.m; sourceTree = "<group>"; };
+		304DC351174299620092FDEF /* AWFilterButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWFilterButtonItem.h; path = class/filter/AWFilterButtonItem.h; sourceTree = "<group>"; };
+		304DC352174299620092FDEF /* AWFilterButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWFilterButtonItem.m; path = class/filter/AWFilterButtonItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304DC31F1742708D0092FDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DC345174270E80092FDEF /* QuartzCore.framework in Frameworks */,
+				304DC343174270CD0092FDEF /* CoreImage.framework in Frameworks */,
+				304DC3261742708D0092FDEF /* UIKit.framework in Frameworks */,
+				304DC3281742708D0092FDEF /* Foundation.framework in Frameworks */,
+				304DC32A1742708D0092FDEF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304DC3191742708D0092FDEF = {
+			isa = PBXGroup;
+			children = (
+				304DC32B1742708D0092FDEF /* AWFilterScrollView */,
+				304DC3241742708D0092FDEF /* Frameworks */,
+				304DC3231742708D0092FDEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304DC3231742708D0092FDEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304DC3221742708D0092FDEF /* AWFilterScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304DC3241742708D0092FDEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				304DC344174270E80092FDEF /* QuartzCore.framework */,
+				304DC342174270CD0092FDEF /* CoreImage.framework */,
+				304DC3251742708D0092FDEF /* UIKit.framework */,
+				304DC3271742708D0092FDEF /* Foundation.framework */,
+				304DC3291742708D0092FDEF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		304DC32B1742708D0092FDEF /* AWFilterScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				304DC347174271CA0092FDEF /* AWAppDelegate.h */,
+				304DC348174271CA0092FDEF /* AWAppDelegate.m */,
+				304DC34A174272A30092FDEF /* AWFilterViewController.h */,
+				304DC34B174272A30092FDEF /* AWFilterViewController.m */,
+				304DC3461742719D0092FDEF /* View */,
+				304DC32C1742708D0092FDEF /* Supporting Files */,
+			);
+			path = AWFilterScrollView;
+			sourceTree = "<group>";
+		};
+		304DC32C1742708D0092FDEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304DC32D1742708D0092FDEF /* AWFilterScrollView-Info.plist */,
+				304DC32E1742708D0092FDEF /* InfoPlist.strings */,
+				304DC3311742708E0092FDEF /* main.m */,
+				304DC3331742708E0092FDEF /* AWFilterScrollView-Prefix.pch */,
+				304DC3371742708E0092FDEF /* Default.png */,
+				304DC3391742708E0092FDEF /* Default@2x.png */,
+				304DC33B1742708E0092FDEF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		304DC3461742719D0092FDEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				304DC350174275B10092FDEF /* Filter */,
+				304DC34D174275820092FDEF /* AWFilterScrollView.h */,
+				304DC34E174275820092FDEF /* AWFilterScrollView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		304DC350174275B10092FDEF /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				304DC351174299620092FDEF /* AWFilterButtonItem.h */,
+				304DC352174299620092FDEF /* AWFilterButtonItem.m */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304DC3211742708D0092FDEF /* AWFilterScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AWFilterScrollView" */;
+			buildPhases = (
+				304DC31E1742708D0092FDEF /* Sources */,
+				304DC31F1742708D0092FDEF /* Frameworks */,
+				304DC3201742708D0092FDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWFilterScrollView;
+			productName = AWFilterScrollView;
+			productReference = 304DC3221742708D0092FDEF /* AWFilterScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304DC31A1742708D0092FDEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Abe Wang";
+			};
+			buildConfigurationList = 304DC31D1742708D0092FDEF /* Build configuration list for PBXProject "AWFilterScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 304DC3191742708D0092FDEF;
+			productRefGroup = 304DC3231742708D0092FDEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304DC3211742708D0092FDEF /* AWFilterScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304DC3201742708D0092FDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DC3301742708D0092FDEF /* InfoPlist.strings in Resources */,
+				304DC3381742708E0092FDEF /* Default.png in Resources */,
+				304DC33A1742708E0092FDEF /* Default@2x.png in Resources */,
+				304DC33C1742708E0092FDEF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304DC31E1742708D0092FDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DC3321742708E0092FDEF /* main.m in Sources */,
+				304DC349174271CA0092FDEF /* AWAppDelegate.m in Sources */,
+				304DC34C174272A30092FDEF /* AWFilterViewController.m in Sources */,
+				304DC34F174275820092FDEF /* AWFilterScrollView.m in Sources */,
+				304DC353174299620092FDEF /* AWFilterButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		304DC32E1742708D0092FDEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304DC32F1742708D0092FDEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304DC33D1742708E0092FDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		304DC33E1742708E0092FDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		304DC3401742708E0092FDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWFilterScrollView/AWFilterScrollView-Prefix.pch";
+				INFOPLIST_FILE = "AWFilterScrollView/AWFilterScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		304DC3411742708E0092FDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWFilterScrollView/AWFilterScrollView-Prefix.pch";
+				INFOPLIST_FILE = "AWFilterScrollView/AWFilterScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304DC31D1742708D0092FDEF /* Build configuration list for PBXProject "AWFilterScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304DC33D1742708E0092FDEF /* Debug */,
+				304DC33E1742708E0092FDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304DC33F1742708E0092FDEF /* Build configuration list for PBXNativeTarget "AWFilterScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304DC3401742708E0092FDEF /* Debug */,
+				304DC3411742708E0092FDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304DC31A1742708D0092FDEF /* Project object */;
+}
