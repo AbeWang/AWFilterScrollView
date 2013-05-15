@@ -44,7 +44,7 @@
 	self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
 	self.navigationController.toolbar.tintColor = [UIColor darkGrayColor];
     
-	UIBarButtonItem *selectItem = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Select", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(selectAction)] autorelease];
+	UIBarButtonItem *selectItem = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Photo", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(selectAction)] autorelease];
 	self.navigationItem.rightBarButtonItem = selectItem;
     
 	UIBarButtonItem *spaceItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil] autorelease];

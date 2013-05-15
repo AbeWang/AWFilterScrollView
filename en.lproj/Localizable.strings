@@ -1,0 +1,18 @@
+/* 
+  File.strings
+  AWFilterScrollView
+
+  Created by Abe on 13/5/15.
+  Copyright (c) 2013年 Abe Wang. All rights reserved.
+*/
+
+"Normal" = "Normal";
+"Sepia Tone" = "Sepia Tone";
+"Filter" = "Filter";
+"Photo" = "Photo";
+"Share" = "Share";
+"Save" = "Save";
+"Camera" = "Camera";
+"Camera Roll" = "Camera Roll";
+"Close" = "Close";
+"Dismiss" = "Dismiss";

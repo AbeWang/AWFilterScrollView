@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300E62381743D28B00E45A25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 300E623A1743D28B00E45A25 /* Localizable.strings */; };
 		304DC3261742708D0092FDEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3251742708D0092FDEF /* UIKit.framework */; };
 		304DC3281742708D0092FDEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3271742708D0092FDEF /* Foundation.framework */; };
 		304DC32A1742708D0092FDEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304DC3291742708D0092FDEF /* CoreGraphics.framework */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300E62341743D1A200E45A25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		300E62391743D28B00E45A25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		300E623B1743D29000E45A25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		304DC3221742708D0092FDEF /* AWFilterScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWFilterScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304DC3251742708D0092FDEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		304DC3271742708D0092FDEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300E62371743D23D00E45A25 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				300E623A1743D28B00E45A25 /* Localizable.strings */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		304DC3191742708D0092FDEF = {
 			isa = PBXGroup;
 			children = (
 				304DC32B1742708D0092FDEF /* AWFilterScrollView */,
+				300E62371743D23D00E45A25 /* Resource */,
 				304DC3241742708D0092FDEF /* Frameworks */,
 				304DC3231742708D0092FDEF /* Products */,
 			);
@@ -174,6 +187,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
 			);
 			mainGroup = 304DC3191742708D0092FDEF;
 			productRefGroup = 304DC3231742708D0092FDEF /* Products */;
@@ -194,6 +208,7 @@
 				304DC3381742708E0092FDEF /* Default.png in Resources */,
 				304DC33A1742708E0092FDEF /* Default@2x.png in Resources */,
 				304DC33C1742708E0092FDEF /* Default-568h@2x.png in Resources */,
+				300E62381743D28B00E45A25 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,10 +230,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		300E623A1743D28B00E45A25 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				300E62391743D28B00E45A25 /* en */,
+				300E623B1743D29000E45A25 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		304DC32E1742708D0092FDEF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				304DC32F1742708D0092FDEF /* en */,
+				300E62341743D1A200E45A25 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -323,6 +348,7 @@
 				304DC3411742708E0092FDEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
