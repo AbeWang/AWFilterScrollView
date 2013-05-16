@@ -48,12 +48,13 @@
 	self.backgroundColor = [UIColor clearColor];
     
     self.layer.backgroundColor = [UIColor grayColor].CGColor;
-	self.layer.borderColor = [UIColor whiteColor].CGColor;
+	self.layer.borderColor = [UIColor lightGrayColor].CGColor;
 	self.layer.borderWidth = 1.0;
     self.layer.cornerRadius = 10.0;
 
 	previewImageView = [[UIImageView alloc] init];
 	previewImageView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.1];
+	previewImageView.layer.contentsScale = [UIScreen mainScreen].scale;
 	[self addSubview:previewImageView];
 
 	indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];

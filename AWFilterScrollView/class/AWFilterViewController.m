@@ -41,6 +41,7 @@
 {
 	[super loadView];
 
+	self.view.backgroundColor = [UIColor colorWithWhite:0.5 alpha:1.0];
 	self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
 	self.navigationController.toolbar.tintColor = [UIColor darkGrayColor];
     
@@ -54,18 +55,17 @@
 	self.navigationController.toolbarHidden = NO;
 	self.toolbarItems = [NSArray arrayWithObjects:spaceItem, shareItem, nil];
     
-	previewView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height - 200.0)];
+	previewView = [[UIImageView alloc] initWithFrame:CGRectMake(10.0, 10.0, self.view.bounds.size.width - 20.0, self.view.bounds.size.height - 220.0)];
 	previewView.contentMode = UIViewContentModeScaleAspectFit;
-    previewView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:1.0];
 	[self.view addSubview:previewView];
 
 	indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-	indicatorView.frame = CGRectMake((self.view.bounds.size.width - 40.0) / 2, (self.view.bounds.size.height - 240.0) / 2, 40.0, 40.0);
+	indicatorView.frame = CGRectMake((self.view.bounds.size.width - 40.0) / 2, (self.view.bounds.size.height - 250.0) / 2, 40.0, 40.0);
 	indicatorView.hidesWhenStopped = YES;
 	[indicatorView stopAnimating];
-	[previewView addSubview:indicatorView];
+	[self.view addSubview:indicatorView];
     
-	scrollView = [[AWFilterScrollView alloc] initWithFrame:CGRectMake(0.0, CGRectGetMaxY(previewView.frame), self.view.bounds.size.width, self.view.bounds.size.height - CGRectGetMaxY(previewView.frame) - 88.0)];
+	scrollView = [[AWFilterScrollView alloc] initWithFrame:CGRectMake(0.0, CGRectGetMaxY(previewView.frame) + 10.0, self.view.bounds.size.width, self.view.bounds.size.height - CGRectGetMaxY(previewView.frame) - 98.0)];
 	scrollView.filterDelegate = self;
 	[self.view addSubview:scrollView];
 }
