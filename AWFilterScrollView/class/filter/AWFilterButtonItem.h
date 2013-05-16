@@ -20,7 +20,8 @@ typedef enum {
     AWFilterTypeSepiaTone,
     AWFilterTypeToneCurve,
     AWFilterTypeVibrance,
-    AWFilterTypeVignette
+    AWFilterTypeVignette,
+    AWFilterTypeHighlightShadow
 } AWFilterType;
 
 @interface AWFilterButtonItem : UIControl

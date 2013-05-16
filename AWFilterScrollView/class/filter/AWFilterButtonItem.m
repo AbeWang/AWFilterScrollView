@@ -88,6 +88,11 @@
 			[filter setValue:[NSNumber numberWithFloat:13.0] forKey:@"inputRadius"];
 			[filter setValue:[NSNumber numberWithFloat:2.0] forKey:@"inputIntensity"];
 			break;
+        case AWFilterTypeHighlightShadow:
+            filter = [[CIFilter filterWithName:@"CIHighlightShadowAdjust"] retain];
+            [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputHighlightAmount"];
+            [filter setValue:[NSNumber numberWithFloat:0.7] forKey:@"inputShadowAmount"];
+            break;
 	}
 }
 

@@ -154,7 +154,7 @@
 
 - (NSInteger)numberOfItemsInFilterScrollView:(AWFilterScrollView *)inScrollView
 {
-    return 5;
+    return 6;
 }
 - (UIImage *)originalImageInFilterScrollView:(AWFilterScrollView *)inScrollView
 {
@@ -183,6 +183,10 @@
         case 4:
 			item = [[[AWFilterButtonItem alloc] initWithType:AWFilterTypeVignette] autorelease];
 			item.name = NSLocalizedString(@"Vignette", nil);
+            break;
+        case 5:
+            item = [[[AWFilterButtonItem alloc] initWithType:AWFilterTypeHighlightShadow] autorelease];
+            item.name = NSLocalizedString(@"Highlight Shadow", nil);
             break;
     }
     return item;
