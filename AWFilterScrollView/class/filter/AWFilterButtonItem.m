@@ -93,6 +93,14 @@
             [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputHighlightAmount"];
             [filter setValue:[NSNumber numberWithFloat:0.7] forKey:@"inputShadowAmount"];
             break;
+        case AWFilterTypeExposureAdjust:
+            filter = [[CIFilter filterWithName:@"CIExposureAdjust"] retain];
+            [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputEV"];
+            break;
+        case AWFilterTypeHueAdjust:
+            filter = [[CIFilter filterWithName:@"CIHueAdjust"] retain];
+            [filter setValue:[NSNumber numberWithFloat:3.0] forKey:@"inputAngle"];
+            break;
 	}
 }
 

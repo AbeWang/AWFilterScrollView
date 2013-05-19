@@ -155,7 +155,7 @@
 
 - (NSInteger)numberOfItemsInFilterScrollView:(AWFilterScrollView *)inScrollView
 {
-    return 6;
+    return 8;
 }
 - (UIImage *)originalImageInFilterScrollView:(AWFilterScrollView *)inScrollView
 {
@@ -188,6 +188,14 @@
         case 5:
             item = [[[AWFilterButtonItem alloc] initWithType:AWFilterTypeHighlightShadow] autorelease];
             item.name = NSLocalizedString(@"Highlight Shadow", nil);
+            break;
+        case 6:
+            item = [[[AWFilterButtonItem alloc] initWithType:AWFilterTypeExposureAdjust] autorelease];
+            item.name = NSLocalizedString(@"EV +", nil);
+            break;
+        case 7:
+            item = [[[AWFilterButtonItem alloc] initWithType:AWFilterTypeHueAdjust] autorelease];
+            item.name = NSLocalizedString(@"Hue", nil);
             break;
     }
     return item;
