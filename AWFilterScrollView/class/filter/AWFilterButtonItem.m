@@ -110,9 +110,19 @@
 	CGRect imageRect = CGRectMake((self.bounds.size.width - image.size.width) / 2, (self.bounds.size.height - image.size.height) / 2 - 8.0, image.size.width, image.size.height);
 
 	previewImageView.frame = imageRect;
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
+    animation.duration = 0.6;
+    animation.autoreverses = NO;
+    animation.repeatCount = 1;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.fromValue = [NSNumber numberWithFloat:0.0];
+    animation.toValue = [NSNumber numberWithFloat:M_PI * 2.0];
 
 	// Normal
 	if (!filter) {
+        [self.layer addAnimation:animation forKey:nil];
 		[previewImageView setImage:image];
 		[indicatorView stopAnimating];
 		return;
@@ -127,6 +137,7 @@
 		CGImageRelease(imageRef);
 
 		dispatch_async(dispatch_get_main_queue(), ^{
+            [self.layer addAnimation:animation forKey:nil];
 			[previewImageView setImage:outputImage];
 			[indicatorView stopAnimating];
 		});

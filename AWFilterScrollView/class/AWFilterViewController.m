@@ -8,6 +8,7 @@
 
 #import "AWFilterViewController.h"
 #import "AWFilterButtonItem.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation AWFilterViewController
 
@@ -200,6 +201,15 @@
 {
 	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
 	[indicatorView stopAnimating];
+    
+    CATransition *animation = [CATransition animation];
+    animation.duration = 0.8;
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.type = @"rippleEffect";
+    
+    [previewView.layer addAnimation:animation forKey:nil];
 	[previewView setImage:inImage];
 }
 
